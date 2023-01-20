@@ -14,8 +14,7 @@ app.get("/", function (req, res) {
     })
 });
 
-const onWindowLoaded = () => {
-    console.log('window loaded');
-}
+app.listen(3000, function(){
+    console.log("Server started on port 3000")
+});
 
-window.onload = onWindowLoaded;
